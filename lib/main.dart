@@ -17,12 +17,23 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.deepPurpleAccent,
       ),
       body: Center(
-        // Căn giữa nội dung của body bằng Center
-        child: Icon(
-          Icons.airport_shuttle,
-          color: Colors.deepOrange,
-          size: 50.0,
+        //RaisedButton
+//        child: RaisedButton(
+//          child: Text('Click me!'),
+//          onPressed: () {},
+//        ),
+        child: RaisedButton.icon(
+          icon: Icon(Icons.mail),
+          onPressed: () {},
+          label: Text('Gửi Mail'),
         ),
+        // IconButton
+//        child: IconButton(
+//          onPressed: () {},
+//          icon: Icon(Icons.accessibility),
+//          color: Colors.pink,
+//          iconSize: 50.0,
+//        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
