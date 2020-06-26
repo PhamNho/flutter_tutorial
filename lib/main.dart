@@ -4,7 +4,6 @@ void main() => runApp(MaterialApp(
       home: Home(),
     ));
 
-
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -19,21 +18,10 @@ class Home extends StatelessWidget {
       ),
       body: Center(
         // Căn giữa nội dung của body bằng Center
-        child: Text(
-          'Đây là body',
-          style: TextStyle(
-            //cỡ chữ
-            fontSize: 20.0,
-            //in đậm
-            fontWeight: FontWeight.bold,
-            //khoảng cách giữa các chữ
-            letterSpacing: 2.0,
-            //màu chữ
-            color: Colors.grey[600],
-            // Font chữ
-            fontFamily: 'Pangolin',
-          ),
-        ),
+        child: Image.asset(
+            'assets/49213305_308321356691851_6367591974723125248_n.jpg'),
+//        child: Image.network(
+//            'https://2.bp.blogspot.com/-fjf5yU5r1Jk/WE1VD1BBKpI/AAAAAAAAjgI/bXwGoigAPJYvScMPtzJtzbOJfoGQO2C_ACEw/s1600/15349541_533868826819201_3350340522319981193_n.jpg'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
@@ -43,4 +31,3 @@ class Home extends StatelessWidget {
     );
   }
 }
-
