@@ -18,10 +18,11 @@ class Home extends StatelessWidget {
       ),
       body: Center(
         // Căn giữa nội dung của body bằng Center
-        child: Image.asset(
-            'assets/49213305_308321356691851_6367591974723125248_n.jpg'),
-//        child: Image.network(
-//            'https://2.bp.blogspot.com/-fjf5yU5r1Jk/WE1VD1BBKpI/AAAAAAAAjgI/bXwGoigAPJYvScMPtzJtzbOJfoGQO2C_ACEw/s1600/15349541_533868826819201_3350340522319981193_n.jpg'),
+        child: Icon(
+          Icons.airport_shuttle,
+          color: Colors.deepOrange,
+          size: 50.0,
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
