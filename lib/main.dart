@@ -1,8 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-      home: Home(),
-    ));
+  home: Home(),
+));
 
 class Home extends StatelessWidget {
   @override
@@ -16,15 +17,23 @@ class Home extends StatelessWidget {
         centerTitle: true, // Căn giữa Title
         backgroundColor: Colors.deepPurpleAccent,
       ),
-      body: Container(
-        padding: EdgeInsets.all(20.0),
-        color: Colors.grey[200],
-        child: Text('Chào nhé !'),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Text('Chào Nhớ Nhé!'),
+          FlatButton(
+            onPressed: () {},
+            color: Colors.blueAccent,
+            child: Text('FlatButton'),
+          ),
+          Container(
+            color: Colors.deepOrange,
+            padding: EdgeInsets.all(30.0),
+            child: Text('Container'),
+          ),
+        ],
       ),
-//      body: Padding(
-//        padding: EdgeInsets.all(20.0),
-//        child: Text('Chào nhé !'),
-//      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text('Click'),
